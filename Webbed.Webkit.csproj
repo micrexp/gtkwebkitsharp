@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CA3CD47-8A03-4126-865B-C8E999273FD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Webbed.Core</RootNamespace>
+    <AssemblyName>Webbed.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\glade-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\gtk-dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\GtkSharp\2.12\lib\gtk-sharp-2.0\pango-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Webkit\webkitapplicationcache.cs" />
+    <Compile Include="Webkit\webkitdefines.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMAttr.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMBarInfo.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMBlob.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCDATASection.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCharacterData.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMComment.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMConsole.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCSSRule.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCSSRuleList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCSSStyleDeclaration.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCSSStyleSheet.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCSSValue.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMCustom.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDatabase.cs" />
+    <Compile Include="Webkit\DOM\webkitdomdefines.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDocument.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDocumentFragment.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDocumentType.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMApplicationCache.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMImplementation.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMMimeType.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMMimeTypeArray.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMPlugin.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMPluginArray.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMSelection.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMSettableTokenList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMStringList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMStringMap.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMTokenList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMDOMWindow.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMEntityReference.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMEvent.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMEventTarget.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMFile.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMFileList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMGeolocation.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHistory.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLAnchorElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLAppletElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLAreaElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLAudioElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLBaseElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLBaseFontElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLBodyElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLBRElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLButtonElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLCanvasElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLCollection.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLDetailsElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLDirectoryElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLDivElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLDListElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLDocument.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLEmbedElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLFieldSetElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLFontElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLFormElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLFrameElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLFrameSetElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLHeadElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLHeadingElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLHRElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLHtmlElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLIFrameElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLImageElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLInputElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLKeygenElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLLabelElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLLegendElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLLIElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLLinkElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLMapElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLMarqueeElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLMediaElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLMenuElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLMetaElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLModElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLObjectElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLOListElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLOptGroupElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLOptionElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLOptionsCollection.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLParagraphElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLParamElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLPreElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLQuoteElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLScriptElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLSelectElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLStyleElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableCaptionElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableCellElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableColElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableRowElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTableSectionElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTextAreaElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLTitleElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLUListElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMHTMLVideoElement.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMLocation.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMediaError.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMediaList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMediaQueryList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMemoryInfo.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMessagePort.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMMouseEvent.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNamedNodeMap.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNavigator.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNode.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNodeFilter.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNodeIterator.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMNodeList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMObject.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMProcessingInstruction.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMRange.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMScreen.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMStorage.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMStyleMedia.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMStyleSheet.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMStyleSheetList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMText.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMTimeRanges.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMTreeWalker.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMUIEvent.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMValidityState.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMWebKitAnimation.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMWebKitAnimationList.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMWebKitNamedFlow.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMWebKitPoint.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMXPathExpression.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMXPathNSResolver.cs" />
+    <Compile Include="Webkit\DOM\WebKitDOMXPathResult.cs" />
+    <Compile Include="Webkit\webkitdownload.cs" />
+    <Compile Include="Webkit\webkitenumtypes.cs" />
+    <Compile Include="Webkit\webkiterror.cs" />
+    <Compile Include="Webkit\webkitfavicondatabase.cs" />
+    <Compile Include="Webkit\webkitgeolocationpolicydecision.cs" />
+    <Compile Include="Webkit\webkitglobals.cs" />
+    <Compile Include="Webkit\webkithittestresult.cs" />
+    <Compile Include="Webkit\webkiticondatabase.cs" />
+    <Compile Include="Webkit\webkitnetworkrequest.cs" />
+    <Compile Include="Webkit\webkitnetworkresponse.cs" />
+    <Compile Include="Webkit\webkitsecurityorigin.cs" />
+    <Compile Include="Webkit\webkitsoupauthdialog.cs" />
+    <Compile Include="Webkit\webkitspellchecker.cs" />
+    <Compile Include="Webkit\webkitversion.cs" />
+    <Compile Include="Webkit\webkitviewportattributes.cs" />
+    <Compile Include="Webkit\webkitwebbackforwardlist.cs" />
+    <Compile Include="Webkit\webkitwebdatabase.cs" />
+    <Compile Include="Webkit\webkitwebdatasource.cs" />
+    <Compile Include="Webkit\webkitwebframe.cs" />
+    <Compile Include="Webkit\webkitwebhistoryitem.cs" />
+    <Compile Include="Webkit\webkitwebinspector.cs" />
+    <Compile Include="Webkit\webkitwebnavigationaction.cs" />
+    <Compile Include="Webkit\webkitwebplugin.cs" />
+    <Compile Include="Webkit\webkitwebplugindatabase.cs" />
+    <Compile Include="Webkit\webkitwebpolicydecision.cs" />
+    <Compile Include="Webkit\webkitwebresource.cs" />
+    <Compile Include="Webkit\webkitwebsettings.cs" />
+    <Compile Include="Webkit\webkitwebview.cs" />
+    <Compile Include="Webkit\WebKitWebWindowFeatures.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
